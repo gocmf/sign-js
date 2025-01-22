@@ -1,0 +1,14 @@
+{
+  "name": "gocmf-sign",
+  "version": "1.0.0",
+  "description": "a signature library for gocmf",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "gouguoyin",
+  "license": "MIT",
+  "dependencies": {
+    "crypto-js": "^4.0.0"
+  }
+}
