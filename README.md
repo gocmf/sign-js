@@ -10,7 +10,7 @@ Requirements:
 - npm (Node.js package manager)
 
 ```bash
-npm install gocmf-sign
+npm install @gocmf/sign
 ```
 
 ### Usage
@@ -18,7 +18,7 @@ npm install gocmf-sign
 ES6 import for typical API call signing use case:
 
 ```javascript
-import sign from 'gocmf-sign'
+import sign from '@gocmf/sign'
 const params = {
     name: 'gouguoyin',
     age: 18,
