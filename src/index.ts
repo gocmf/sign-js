@@ -1,4 +1,4 @@
-import crypto from 'crypto-js'
+import md5 from 'crypto-js/md5'
 
 const sign = {
     /**
@@ -13,7 +13,7 @@ const sign = {
             return ''
         }
         // 对参数进行 key 排序
-        const sortedParams = {}
+        const sortedParams: Record<string, any> = {};
         Object.keys(params)
             .sort()
             .forEach((key) => {
@@ -30,7 +30,7 @@ const sign = {
                 .map((key) => `${key}=${sortedParams[key]}&`)
                 .join('') + `secretKey=${secretKey}&timestamp=${timestamp}`
         // 使用 MD5 算法对签名进行哈希计算
-        return crypto.MD5(signature).toString()
+        return md5(signature).toString()
     }
 }
 
