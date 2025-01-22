@@ -1,12 +1,13 @@
 {
   "name": "gocmf-sign",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "a signature library for gocmf",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "tsc"
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "mocha --reporter spec"
   },
   "keywords": [
     "gocmf",
@@ -16,16 +17,17 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/gocmf/sign-js"
+    "url": "git://github.com/gocmf/sign-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gocmf/sign-js/issues"
   },
   "dependencies": {
     "crypto-js": "^4.0.0"
   },
   "devDependencies": {
     "@types/crypto-js": "^4.2.2",
-    "typescript": "^5.7.3"
+    "typescript": "^5.2.2"
   },
-  "files": [
-    "lib/**/*"
-  ]
+  "files": ["dist", "src"]
 }
