@@ -8,6 +8,10 @@
   },
   "author": "gouguoyin",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/gocmf/sign-js"
+  },
   "dependencies": {
     "crypto-js": "^4.0.0"
   }
