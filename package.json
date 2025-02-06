@@ -1,6 +1,6 @@
 {
   "name": "@gocmf/sign",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "a signature library for gocmf",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",

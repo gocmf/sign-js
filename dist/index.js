@@ -21,7 +21,7 @@ const sign = {
         Object.keys(params)
             .sort()
             .forEach((key) => {
-            if (typeof params[key] === 'number') {
+            if (typeof params[key] === 'number' || typeof params[key] === 'boolean') {
                 sortedParams[key] = params[key];
             }
             if (typeof params[key] === 'string' && params[key].length > 0) {
